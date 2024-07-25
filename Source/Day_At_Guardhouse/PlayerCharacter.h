@@ -1,11 +1,8 @@
-// PlayerCharacter.h
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
-#include "Components/ActorComponent.h" 
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -14,25 +11,62 @@ class DAY_AT_GUARDHOUSE_API APlayerCharacter : public ACharacter
     GENERATED_BODY()
 
 public:
-    // Constructor - Sets default values for this character's properties
+    // Constructor
     APlayerCharacter();
-    void SetCustomDepthRecursive(AActor* Actor, bool bEnable);
-public:
+
     // Called every frame
     virtual void Tick(float DeltaTime) override;
 
-    // Input function bindings
-    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    // Setup input bindings
+    virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
     // Camera control functions
     void LookUp(float AxisValue);
     void Turn(float AxisValue);
-    void Zoom(float Zoom);
+    void Zoom(float AxisValue);
 
-    // Interaction function triggered by 'Mouse Left' key
+    // Interaction functions
     void Interact();
+    void CancelInteraction();
+
+protected:
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
 
 private:
+    // Check for interactable objects each frame
+    void CheckForInteractableObjects();
+
+    // Manage highlighting of interactable objects
+    void ManageHighlight(AActor* HitActor);
+
+    // Find interactable actor for interaction
+    AActor* FindInteractableActor() const;
+
+    // Enable or disable custom depth rendering for an actor
+    void SetCustomDepthRecursive(AActor* Actor, bool bEnable);
+
+    // Disable player input
+    void DisablePlayerInput();
+
+    // Enable player input
+    void EnablePlayerInput();
+
+    // Camera component
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
     UCameraComponent* CameraComponent;
+
+    // Original camera location and rotation
+    FVector OriginalCameraLocation;
+    FRotator OriginalCameraRotation;
+
+    // Target camera location and rotation for interaction
+    FVector TargetCameraLocation;
+    FRotator TargetCameraRotation;
+
+    // Interaction state flag
+    bool bIsInteracting;
+
+    // Input state flag
+    bool bInputDisabled;
 };
