@@ -1,0 +1,31 @@
+[CVS위치 및 편집 방법]
+
+1.엑셀 위치
+
+에픽 게임즈 해당 플젝 폴더보기 -> Data_info
+또는
+깃헙위치\GitHub\Day_At_Guardhouse\Data_Info
+
+2.원하는 CVS 파일 열고 정보 편집
+
+int RowName - 순서(건들지 말것)
+String Name - 이름(영어 필수)
+String Identity_number	신분번호
+String passport_number	여권번호
+String Passport_validityperiod	여권유효기간( . 기준으로 년월일 식별)
+bool Gender	0남자 1여자
+String BirthDate	생년월일( . 기준으로 년월일 식별)
+String Residence	거주지(영어 필수)
+String Purpose	방문 목적(CVS 한국어 인식 불가 수기입 필수)
+int Period_stay	거주기간
+bool Stamp	공문서 도장 (0미보유 1보유)
+bool Diagnosis 접종여부(0미접종 1접종)
+
+3.언리얼 엔진 업데이트
+
+Structure은 건들지 말 것(데이터 타입 바꿀거면 손대도 됨)
+수정한 DataTable 클릭한 뒤 Reimport하면 데이터 재입력 완료
+
+*설명
+Structure은 해당 정보 구조체 , 어떤 타입으로 할건지 설정
+Data Table은 Structure의 구조를 참고해서 CVS에서 입력된 정보 세팅
