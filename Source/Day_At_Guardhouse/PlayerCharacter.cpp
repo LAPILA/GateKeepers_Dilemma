@@ -206,6 +206,11 @@ void APlayerCharacter::CancelInteraction()
     CameraComponent->SetWorldLocationAndRotation(OriginalCameraLocation, OriginalCameraRotation);
 
     EnablePlayerInput();
+
+    if (CurrentWidget) {//CancleInteraction()½Ã ºäÆ÷Æ®¿¡ À§Á¬ »èÁ¦.
+        CurrentWidget->RemoveFromParent();
+        UE_LOG(LogTemp, Warning, TEXT("Widget remove to Viewport"));//debug tool
+    }
 }
 
 void APlayerCharacter::DisablePlayerInput()
@@ -215,7 +220,7 @@ void APlayerCharacter::DisablePlayerInput()
     {
         if (CurrentWidget) {//DisablePlayerInput()½Ã ºäÆ÷Æ®¿¡ À§Á¬ ¶ç¿ì±â
             CurrentWidget->AddToViewport();
-            UE_LOG(LogTemp, Warning, TEXT("Widget Added to Viewport"));
+            UE_LOG(LogTemp, Warning, TEXT("Widget Added to Viewport"));//debug tool
         }
         PlayerController->bShowMouseCursor = true;
         PlayerController->SetIgnoreLookInput(true);
