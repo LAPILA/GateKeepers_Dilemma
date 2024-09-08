@@ -29,6 +29,10 @@ void APlayerCharacter::BeginPlay()
     // Store the original camera location and rotation at the start
     OriginalCameraLocation = CameraComponent->GetComponentLocation();
     OriginalCameraRotation = CameraComponent->GetComponentRotation();
+
+    if (WidgetClass) {//Widget À¯È¿¼º °Ë»ç
+        CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), WidgetClass);
+    }
 }
 
 // Tick function called every frame
@@ -209,6 +213,10 @@ void APlayerCharacter::DisablePlayerInput()
     APlayerController* PlayerController = Cast<APlayerController>(GetController());
     if (PlayerController)
     {
+        if (CurrentWidget) {//DisablePlayerInput()½Ã ºäÆ÷Æ®¿¡ À§Á¬ ¶ç¿ì±â
+            CurrentWidget->AddToViewport();
+            UE_LOG(LogTemp, Warning, TEXT("Widget Added to Viewport"));
+        }
         PlayerController->bShowMouseCursor = true;
         PlayerController->SetIgnoreLookInput(true);
         PlayerController->SetIgnoreMoveInput(true);
