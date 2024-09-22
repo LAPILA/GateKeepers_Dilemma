@@ -28,7 +28,8 @@ public:
 
     // Interaction functions
     void Interact();
-    void CancelInteraction();
+
+    FVector SceneComponentTest;
 
 protected:
     // Called when the game starts or when spawned
@@ -37,6 +38,19 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
     TSubclassOf<UUserWidget> WidgetClass;
 
+    // Interaction state flag
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
+    bool bIsInteracting;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetCheckList;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetCheckList2;
+
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
+    void CancelInteraction();
+    
 private:
     UUserWidget* CurrentWidget;
     // Check for interactable objects each frame
@@ -52,9 +66,11 @@ private:
     void SetCustomDepthRecursive(AActor* Actor, bool bEnable);
 
     // Disable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
     void DisablePlayerInput();
 
     // Enable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
     void EnablePlayerInput();
 
     // Camera component
@@ -69,8 +85,7 @@ private:
     FVector TargetCameraLocation;
     FRotator TargetCameraRotation;
 
-    // Interaction state flag
-    bool bIsInteracting;
+   
 
     // Input state flag
     bool bInputDisabled;
