@@ -43,14 +43,32 @@ void ALevelScriptRandomData::ValidateRandomData()
 // 디버그 정보를 화면에 출력하는 함수
 void ALevelScriptRandomData::DebugPrintValidationResults()
 {
-	FString DebugMessage = FString::Printf(TEXT("ErrorData: %s, NameValid: %s, IDValid: %s, PNValid: %s, PVValid: %s, GenderValid: %s, BirthValid: %s"),
-		bErrorData ? TEXT("True") : TEXT("False"),
-		bNameValid ? TEXT("True") : TEXT("False"),
-		bIDValid ? TEXT("True") : TEXT("False"),
-		bPNValid ? TEXT("True") : TEXT("False"),
-		bPVValid ? TEXT("True") : TEXT("False"),
-		bGenderValid ? TEXT("True") : TEXT("False"),
-		bBirthValid ? TEXT("True") : TEXT("False"));
+    // 각각의 변수 상태에 따른 색상 지정
+    FColor ErrorColor = bErrorData ? FColor::Red : FColor::Green;
+    FColor NameColor = bNameValid ? FColor::Red : FColor::Green;
+    FColor IDColor = bIDValid ? FColor::Red : FColor::Green;
+    FColor PNColor = bPNValid ? FColor::Red : FColor::Green;
+    FColor PVColor = bPVValid ? FColor::Red : FColor::Green;
+    FColor GenderColor = bGenderValid ? FColor::Red : FColor::Green;
+    FColor BirthColor = bBirthValid ? FColor::Red : FColor::Green;
 
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, DebugMessage); // 디버그 메시지를 화면에 표시
+    // 디버그 메시지를 각각의 변수 상태에 맞게 출력
+    FString DebugMessage = FString::Printf(TEXT("ErrorData: %s, NameValid: %s, IDValid: %s, PNValid: %s, PVValid: %s, GenderValid: %s, BirthValid: %s"),
+        bErrorData ? TEXT("True") : TEXT("False"),
+        bNameValid ? TEXT("True") : TEXT("False"),
+        bIDValid ? TEXT("True") : TEXT("False"),
+        bPNValid ? TEXT("True") : TEXT("False"),
+        bPVValid ? TEXT("True") : TEXT("False"),
+        bGenderValid ? TEXT("True") : TEXT("False"),
+        bBirthValid ? TEXT("True") : TEXT("False"));
+
+    // 각 항목에 대해 개별 메시지 출력 (색상 적용)
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, ErrorColor, FString::Printf(TEXT("ErrorData: %s"), bErrorData ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, NameColor, FString::Printf(TEXT("NameValid: %s"), bNameValid ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, IDColor, FString::Printf(TEXT("IDValid: %s"), bIDValid ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, PNColor, FString::Printf(TEXT("PNValid: %s"), bPNValid ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, PVColor, FString::Printf(TEXT("PVValid: %s"), bPVValid ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, GenderColor, FString::Printf(TEXT("GenderValid: %s"), bGenderValid ? TEXT("True") : TEXT("False")));
+    GEngine->AddOnScreenDebugMessage(-1, 15.0f, BirthColor, FString::Printf(TEXT("BirthValid: %s"), bBirthValid ? TEXT("True") : TEXT("False")));
 }
+
