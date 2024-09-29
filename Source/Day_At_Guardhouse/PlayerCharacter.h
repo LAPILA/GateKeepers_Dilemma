@@ -38,9 +38,12 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
     TSubclassOf<UUserWidget> WidgetClass;
 
-    // Interaction state flag
+    // Interaction state flag 수정해야할 지점. bIsInteracting을 블프에서 굳이 사용하지 않을 듯.
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
     bool bIsInteracting;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
+    bool bIsCheckObject;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
     TSubclassOf<UUserWidget> WidgetCheckList;
@@ -85,7 +88,11 @@ private:
     FVector TargetCameraLocation;
     FRotator TargetCameraRotation;
 
-   
+    void ArrestButton();
+
+    void NextButton();
+
+    void RejectButton();
 
     // Input state flag
     bool bInputDisabled;

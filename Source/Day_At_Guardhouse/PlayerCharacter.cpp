@@ -106,6 +106,7 @@ void APlayerCharacter::ManageHighlight(AActor* HitActor)
                 SetCustomDepthRecursive(HighlightedActor, false);
             }
             HighlightedActor = HitActor;
+            bIsCheckObject = true;
             UE_LOG(LogTemp, Warning, TEXT("Highlight"));
             SetCustomDepthRecursive(HighlightedActor, true);
         }
@@ -114,6 +115,7 @@ void APlayerCharacter::ManageHighlight(AActor* HitActor)
     {
         SetCustomDepthRecursive(HighlightedActor, false);
         HighlightedActor = nullptr;
+        bIsCheckObject = false;
     }
 }
 
@@ -238,7 +240,7 @@ void APlayerCharacter::Interact()//WidgetCheckList
                 }
                 UE_LOG(LogTemp, Warning, TEXT("NoCamera component with tag"));
 
-                TargetCameraLocation = FVector(-60.0f, 60.0f, 330.0f);
+                TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); 카메라 컴포넌트 위치로 이동.
                 TargetCameraRotation = SceneComponent->GetComponentRotation();
 
                 bIsInteracting = true;
@@ -309,4 +311,17 @@ void APlayerCharacter::EnablePlayerInput()
         PlayerController->bEnableClickEvents = true;
         PlayerController->bEnableMouseOverEvents = true;
     }
+}
+
+//추후에 추가 예정.
+void APlayerCharacter::ArrestButton() {
+
+}
+
+void APlayerCharacter::NextButton() {
+
+}
+
+void APlayerCharacter::RejectButton() {
+
 }
