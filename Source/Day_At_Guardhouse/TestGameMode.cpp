@@ -39,7 +39,7 @@ void ATestGameMode::ValidateRandomData()
 void ATestGameMode::DebugPrintValidationResults()
 {
     // 디버그 정보 출력
-    GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::Printf(TEXT("Debug Information: ErrorData=%s, NameValid=%s, IDValid=%s, PNValid=%s, PVValid=%s, GenderValid=%s, BirthValid=%s"),
+    GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Red, FString::Printf(TEXT("Debug Information: ErrorData=%s, NameValid=%s, IDValid=%s, PNValid=%s, PVValid=%s, GenderValid=%s, BirthValid=%s"),
         bErrorData ? TEXT("True") : TEXT("False"),
         bNameValid ? TEXT("True") : TEXT("False"),
         bIDValid ? TEXT("True") : TEXT("False"),
