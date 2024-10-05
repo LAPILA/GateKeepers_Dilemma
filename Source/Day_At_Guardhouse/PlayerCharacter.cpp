@@ -192,21 +192,21 @@ void APlayerCharacter::Interact()//WidgetCheckList
 
         for (USceneComponent* SceneComponent : SceneComponents)
         {
-            if (SceneComponent->ComponentHasTag(FName("CameraPos")) && SceneComponent->ComponentHasTag(FName("WidgetCheckList2"))){//태그로 해당 위젯 블루프린트 뷰포트에 출력.
-                UE_LOG(LogTemp, Warning, TEXT("find widget2"));
-                ActorWidgetClass = WidgetCheckList2;
+            if (SceneComponent->ComponentHasTag(FName("CameraPos")) && SceneComponent->ComponentHasTag(FName("WidgetWarning"))){//태그로 해당 위젯 블루프린트 뷰포트에 출력.
+                UE_LOG(LogTemp, Warning, TEXT("find WidgetWarning"));
+                ActorWidgetClass = WidgetWarning;
 
                 if (ActorWidgetClass) {//Widget 유효성 검사
                     CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), ActorWidgetClass);
                     if (!CurrentWidget) {
-                        UE_LOG(LogTemp, Error, TEXT("WidgetCheckList2 creation failed!"));
+                        UE_LOG(LogTemp, Error, TEXT("WidgetWarning creation failed!"));
                     }
                     else {
-                        UE_LOG(LogTemp, Error, TEXT("currentwidget 살아있음. widgetchecklist2"));
+                        UE_LOG(LogTemp, Error, TEXT("currentwidget 살아있음. WidgetWarning"));
                     }
                 }
                 else {//위젯클래스가 NULL이면 에러가 뜸. 수정이 필요할 것으로 보임.
-                    UE_LOG(LogTemp, Error, TEXT("WidgetCheckList2 is NULL in BeginPlay!"));
+                    UE_LOG(LogTemp, Error, TEXT("WidgetWarning is NULL in BeginPlay!"));
                 }
 
                 UE_LOG(LogTemp, Warning, TEXT("Found CameraPos component with tag"));
@@ -248,6 +248,80 @@ void APlayerCharacter::Interact()//WidgetCheckList
 
                 DisablePlayerInput();
                 SetCustomDepthRecursive(InteractableActor, false);
+
+                break;
+            }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("WidgetInformation"))) {
+                UE_LOG(LogTemp, Warning, TEXT("find WidgetInformation "));
+                ActorWidgetClass = WidgetInformation;
+
+                if (ActorWidgetClass) {//Widget 유효성 검사
+                    CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), ActorWidgetClass);
+                    if (!CurrentWidget) {
+                        UE_LOG(LogTemp, Error, TEXT("WidgetInformation creation failed!"));
+                    }
+                    else {
+                        UE_LOG(LogTemp, Error, TEXT("currentwidget 살아있음. WidgetInformation"));
+                    }
+                }
+                else {//위젯클래스가 NULL이면 에러가 뜸. 수정이 필요할 것으로 보임.
+                    UE_LOG(LogTemp, Error, TEXT("WidgetInformation is NULL in BeginPlay!"));
+                }
+                UE_LOG(LogTemp, Warning, TEXT("NoCamera component with tag"));
+
+                TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); 카메라 컴포넌트 위치로 이동.
+                TargetCameraRotation = SceneComponent->GetComponentRotation();
+
+                bIsInteracting = true;
+                bInputDisabled = true;
+
+                DisablePlayerInput();
+                SetCustomDepthRecursive(InteractableActor, false);
+
+                break;
+            }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Arrest"))) {//Arrest Button 구현부
+                UE_LOG(LogTemp, Warning, TEXT("find Arrest"));
+                //ActorWidgetClass = WidgetInformation;
+                if (SceneComponent->ComponentHasTag(FName("NPC"))) {
+                    UE_LOG(LogTemp, Warning, TEXT("find ArrestNPC"));
+                    //Arrest
+                    //bIsArrest = true;
+                    StartArrest();
+                }
+                
+               
+
+                break;
+            }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Next"))) {//Next Button 구현부
+                UE_LOG(LogTemp, Warning, TEXT("find Next"));
+                //ActorWidgetClass = WidgetInformation;
+                if (SceneComponent->ComponentHasTag(FName("NPC"))) {
+                    UE_LOG(LogTemp, Warning, TEXT("find NextNPC"));
+
+                }
+
+                
+
+                break;
+            }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Reject"))) {//Reject Button 구현부
+                UE_LOG(LogTemp, Warning, TEXT("find Reject"));
+                //ActorWidgetClass = WidgetInformation;
+                if (SceneComponent->ComponentHasTag(FName("NPC"))) {
+                    UE_LOG(LogTemp, Warning, TEXT("find RejectNPC"));
+
+                }
+
+               
+
+                break;
+            }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Scan"))) {//Scan Button 구현부
+                UE_LOG(LogTemp, Warning, TEXT("find Scan"));
+                ScanBP();
+                
 
                 break;
             }
@@ -311,6 +385,10 @@ void APlayerCharacter::EnablePlayerInput()
         PlayerController->bEnableClickEvents = true;
         PlayerController->bEnableMouseOverEvents = true;
     }
+}
+
+void APlayerCharacter::StartArrest() {
+    bIsArrest = true;
 }
 
 //추후에 추가 예정.
