@@ -3,6 +3,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
+#include "Blueprint/UserWidget.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -27,13 +28,34 @@ public:
 
     // Interaction functions
     void Interact();
-    void CancelInteraction();
+
+    FVector SceneComponentTest;
 
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetClass;
+
+    // Interaction state flag 수정해야할 지점. bIsInteracting을 블프에서 굳이 사용하지 않을 듯.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
+    bool bIsInteracting;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
+    bool bIsCheckObject;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetCheckList;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetCheckList2;
+
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
+    void CancelInteraction();
+    
 private:
+    UUserWidget* CurrentWidget;
     // Check for interactable objects each frame
     void CheckForInteractableObjects();
 
@@ -47,9 +69,11 @@ private:
     void SetCustomDepthRecursive(AActor* Actor, bool bEnable);
 
     // Disable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
     void DisablePlayerInput();
 
     // Enable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
     void EnablePlayerInput();
 
     // Camera component
@@ -64,8 +88,11 @@ private:
     FVector TargetCameraLocation;
     FRotator TargetCameraRotation;
 
-    // Interaction state flag
-    bool bIsInteracting;
+    void ArrestButton();
+
+    void NextButton();
+
+    void RejectButton();
 
     // Input state flag
     bool bInputDisabled;
