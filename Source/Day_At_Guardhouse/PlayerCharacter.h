@@ -35,12 +35,18 @@ protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
 
+    UFUNCTION(BlueprintImplementableEvent, Category = "UI")
+    void ScanBP();
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
     TSubclassOf<UUserWidget> WidgetClass;
 
-    // Interaction state flag 수정해야할 지점. bIsInteracting을 블프에서 굳이 사용하지 않을 듯.
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
     bool bIsInteracting;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
+    bool bIsArrest;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interaction")
     bool bIsCheckObject;
@@ -49,10 +55,19 @@ protected:
     TSubclassOf<UUserWidget> WidgetCheckList;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
-    TSubclassOf<UUserWidget> WidgetCheckList2;
+    TSubclassOf<UUserWidget> WidgetInformation;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetGuide;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
+    TSubclassOf<UUserWidget> WidgetWarning;
 
     UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
     void CancelInteraction();
+
+    UFUNCTION(BlueprintCallable)
+    void StartArrest();
     
 private:
     UUserWidget* CurrentWidget;
