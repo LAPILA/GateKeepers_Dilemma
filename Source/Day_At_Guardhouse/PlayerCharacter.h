@@ -38,6 +38,15 @@ protected:
     UFUNCTION(BlueprintImplementableEvent, Category = "UI")
     void ScanBP();
 
+    UFUNCTION(BlueprintImplementableEvent, Category = "NPC")
+    void StartMove_Event();
+
+    UFUNCTION(BlueprintImplementableEvent, Category = "NPC")
+    void EndMove_Event();
+
+    UFUNCTION(BlueprintImplementableEvent, Category = "NPC")
+    void BackMove_Event();
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
     TSubclassOf<UUserWidget> WidgetClass;
 
