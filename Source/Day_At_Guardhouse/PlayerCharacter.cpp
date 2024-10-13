@@ -281,50 +281,37 @@ void APlayerCharacter::Interact()//WidgetCheckList
                 break;
             }
             else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Arrest"))) {//Arrest Button 구현부
-                UE_LOG(LogTemp, Warning, TEXT("find Arrest"));
+                UE_LOG(LogTemp, Log, TEXT("find Arrest"));
+                //arrest 애니메이션 완료되면 코드 추가 예정.
                 //ActorWidgetClass = WidgetInformation;
                 if (SceneComponent->ComponentHasTag(FName("NPC"))) {
-                    UE_LOG(LogTemp, Warning, TEXT("find ArrestNPC"));
+                    UE_LOG(LogTemp, Log, TEXT("find ArrestNPC"));
                     //Arrest
                     //bIsArrest = true;
                     StartArrest();
                 }
-                
-               
-
                 break;
             }
             else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Next"))) {//Next Button 구현부
-                UE_LOG(LogTemp, Warning, TEXT("find Next"));
-                //ActorWidgetClass = WidgetInformation;
-                if (SceneComponent->ComponentHasTag(FName("NPC"))) {
-                    UE_LOG(LogTemp, Warning, TEXT("find NextNPC"));
-
-                }
-
-                
-
+                UE_LOG(LogTemp, Log, TEXT("find Next"));
+                StartMove_Event();
                 break;
             }
             else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Reject"))) {//Reject Button 구현부
                 UE_LOG(LogTemp, Warning, TEXT("find Reject"));
-                //ActorWidgetClass = WidgetInformation;
-                if (SceneComponent->ComponentHasTag(FName("NPC"))) {
-                    UE_LOG(LogTemp, Warning, TEXT("find RejectNPC"));
-
-                }
-
-               
-
+                BackMove_Event();
                 break;
             }
             else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Scan"))) {//Scan Button 구현부
-                UE_LOG(LogTemp, Warning, TEXT("find Scan"));
+                UE_LOG(LogTemp, Log, TEXT("find Scan"));
                 ScanBP();
-                
-
                 break;
             }
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Pass"))) {//Next Button 구현부
+                UE_LOG(LogTemp, Log, TEXT("find Pass"));
+                EndMove_Event();
+                break;
+                }
         }
     }
 }
