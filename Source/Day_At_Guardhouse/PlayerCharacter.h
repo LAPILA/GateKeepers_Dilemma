@@ -31,9 +31,26 @@ public:
 
     FVector SceneComponentTest;
 
+    // Disable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
+        void DisablePlayerInput();
+
+    // Enable player input
+    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
+        void EnablePlayerInput();
+
 protected:
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;
+
+    UFUNCTION(BlueprintImplementableEvent, Category = "UI")
+    void QuestionButton();
+
+    UFUNCTION(BlueprintImplementableEvent, Category = "UI")
+    void CheckList();
+
+    UFUNCTION(BlueprintImplementableEvent, Category = "UI")
+    void ViewInformation();
 
     UFUNCTION(BlueprintImplementableEvent, Category = "UI")
     void ScanBP();
@@ -77,6 +94,8 @@ protected:
 
     UFUNCTION(BlueprintCallable)
     void StartArrest();
+
+
     
 private:
     UUserWidget* CurrentWidget;
@@ -92,13 +111,7 @@ private:
     // Enable or disable custom depth rendering for an actor
     void SetCustomDepthRecursive(AActor* Actor, bool bEnable);
 
-    // Disable player input
-    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
-    void DisablePlayerInput();
-
-    // Enable player input
-    UFUNCTION(BlueprintCallable)//매크로 삭제 예정.
-    void EnablePlayerInput();
+    
 
     // Camera component
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
