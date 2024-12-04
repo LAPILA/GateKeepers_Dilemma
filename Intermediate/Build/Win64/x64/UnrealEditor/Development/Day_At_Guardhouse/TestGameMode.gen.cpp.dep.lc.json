@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\unrealeditor\\inc\\day_at_guardhouse\\uht\\testgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\x64\\day_at_guardhouseeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\day_at_guardhouse\\definitions.day_at_guardhouse.h",
+            "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\source\\day_at_guardhouse\\testgamemode.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\unrealeditor\\inc\\day_at_guardhouse\\uht\\testgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

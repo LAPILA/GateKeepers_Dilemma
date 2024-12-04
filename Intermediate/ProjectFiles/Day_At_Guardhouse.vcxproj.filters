@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Day_At_Guardhouse.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Day_At_Guardhouse.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Day_At_GuardhouseEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Day_At_Guardhouse">
+      <UniqueIdentifier>{02FBE322-F846-33B1-A7CB-C3C98DD96573}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Day_At_Guardhouse\Day_At_Guardhouse.Build.cs">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\Day_At_Guardhouse.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\Day_At_Guardhouse.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\Day_At_GuardhouseCharacter.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\Day_At_GuardhouseCharacter.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\Day_At_GuardhouseGameMode.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\Day_At_GuardhouseGameMode.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\LevelScriptRandomData.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\LevelScriptRandomData.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\PlayerCharacter.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\PlayerCharacter.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\TestGameMode.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\TestGameMode.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
+    <Filter Include="Source\Day_At_Guardhouse\Private">
+      <UniqueIdentifier>{67FC09C3-CC88-31A9-BE42-4A5A49B8E31B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\Private\BaseWidget.cpp">
+      <Filter>Source\Day_At_Guardhouse\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Day_At_Guardhouse\Public">
+      <UniqueIdentifier>{FA58AC73-B1B5-3D30-9BD8-D4729461C604}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\Public\BaseWidget.h">
+      <Filter>Source\Day_At_Guardhouse\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

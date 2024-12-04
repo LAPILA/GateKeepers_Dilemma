@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_Guardhouse.Build.cs",
+		"C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse.Target.cs",
+		"C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_GuardhouseEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

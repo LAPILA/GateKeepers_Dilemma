@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Day_At_Guardhouse",
+			"Path": "..\\Source\\Day_At_Guardhouse.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Day_At_GuardhouseEditor",
+			"Path": "..\\Source\\Day_At_GuardhouseEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

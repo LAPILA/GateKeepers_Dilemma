@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\unrealeditor\\inc\\day_at_guardhouse\\uht\\day_at_guardhouse.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\x64\\day_at_guardhouseeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\develop\\unreal_project\\gatekeepers_dilemma\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\day_at_guardhouse\\definitions.day_at_guardhouse.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
