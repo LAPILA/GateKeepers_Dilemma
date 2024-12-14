@@ -56,6 +56,12 @@
     <ClInclude Include="..\..\Source\Day_At_Guardhouse\Day_At_GuardhouseGameMode.h">
       <Filter>Source\Day_At_Guardhouse</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Day_At_Guardhouse\DialogueWidget.cpp">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Day_At_Guardhouse\DialogueWidget.h">
+      <Filter>Source\Day_At_Guardhouse</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Day_At_Guardhouse\LevelScriptRandomData.cpp">
       <Filter>Source\Day_At_Guardhouse</Filter>
     </ClCompile>
