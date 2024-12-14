@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Day_At_GuardhouseModuleRules
-build_property.ProjectDir = C:\Users\Develop\Unreal_Project\GateKeepers_Dilemma\Intermediate\Build\BuildRulesProjects\Day_At_GuardhouseModuleRules\
+build_property.ProjectDir = C:\Users\TOP\Documents\GitHub\GateKeepers_Dilemma\Intermediate\Build\BuildRulesProjects\Day_At_GuardhouseModuleRules\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

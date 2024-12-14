@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Day_At_GuardhouseModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+940226cbb2a97f039c0e71f2bced81800ffa85fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1119cbbb0668a2ce8665ec594b3eebc551eb901")]
 [assembly: System.Reflection.AssemblyProductAttribute("Day_At_GuardhouseModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Day_At_GuardhouseModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

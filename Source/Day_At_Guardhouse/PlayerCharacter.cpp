@@ -30,13 +30,13 @@ void APlayerCharacter::BeginPlay()
     OriginalCameraLocation = CameraComponent->GetComponentLocation();
     OriginalCameraRotation = CameraComponent->GetComponentRotation();
 
-    //if (WidgetClass) {//Widget À¯È¿¼º °Ë»ç
+    //if (WidgetClass) {//Widget ï¿½ï¿½È¿ï¿½ï¿½ ï¿½Ë»ï¿½
     //    CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), WidgetClass);
     //    if (!CurrentWidget) {
     //        UE_LOG(LogTemp, Error, TEXT("CurrentWidget creation failed!"));
     //    }
     //}
-    //else {//À§Á¬Å¬·¡½º°¡ NULLÀÌ¸é ¿¡·¯°¡ ¶ä. ¼öÁ¤ÀÌ ÇÊ¿äÇÒ °ÍÀ¸·Î º¸ÀÓ.
+    //else {//ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NULLï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     //    UE_LOG(LogTemp, Error, TEXT("WidgetClass is NULL in BeginPlay!"));
     //}
 }
@@ -166,7 +166,7 @@ void APlayerCharacter::Turn(float AxisValue)
     }
 }
 
-void APlayerCharacter::Zoom(float AxisValue) //zoom ±â´É ´ë½Å¿¡ Ä«¸Þ¶ó Ãß°¡ÇØ¼­ Æ®·¹ÀÌ½ÌµÈ ¹°Ã¼¿Í interaction½Ã ÇØ´ç Ä«¸Þ¶ó·Î ½ÃÁ¡ ÀÌµ¿ÇÏ¸é ¾î¶³±î?
+void APlayerCharacter::Zoom(float AxisValue) //zoom ï¿½ï¿½ï¿½ ï¿½ï¿½Å¿ï¿½ Ä«ï¿½Þ¶ï¿½ ï¿½ß°ï¿½ï¿½Ø¼ï¿½ Æ®ï¿½ï¿½ï¿½Ì½Ìµï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ interactionï¿½ï¿½ ï¿½Ø´ï¿½ Ä«ï¿½Þ¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ï¸ï¿½ ï¿½î¶³ï¿½ï¿½?
 {
     if (!bInputDisabled)
     {
@@ -187,25 +187,25 @@ void APlayerCharacter::Interact()//WidgetCheckList
 
         UE_LOG(LogTemp, Error, TEXT("interacter"));
 
-        // À§Á¬ ºí·çÇÁ¸°Æ® Å¬·¡½º¸¦ ÀúÀåÇÒ º¯¼ö
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         //TSubclassOf<UUserWidget> ActorWidgetClass = nullptr;
 
         for (USceneComponent* SceneComponent : SceneComponents)
         {
-            if (SceneComponent->ComponentHasTag(FName("CameraPos")) && SceneComponent->ComponentHasTag(FName("WidgetWarning"))){//ÅÂ±×·Î ÇØ´ç À§Á¬ ºí·çÇÁ¸°Æ® ºäÆ÷Æ®¿¡ Ãâ·Â.
+            if (SceneComponent->ComponentHasTag(FName("CameraPos")) && SceneComponent->ComponentHasTag(FName("WidgetWarning"))){//ï¿½Â±×·ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½.
                 UE_LOG(LogTemp, Warning, TEXT("find WidgetWarning"));
                 //ActorWidgetClass = WidgetWarning;
 
-                //if (ActorWidgetClass) {//Widget À¯È¿¼º °Ë»ç
+                //if (ActorWidgetClass) {//Widget ï¿½ï¿½È¿ï¿½ï¿½ ï¿½Ë»ï¿½
                 //    CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), ActorWidgetClass);
                 //    if (!CurrentWidget) {
                 //        UE_LOG(LogTemp, Error, TEXT("WidgetWarning creation failed!"));
                 //    }
                 //    else {
-                //        UE_LOG(LogTemp, Error, TEXT("currentwidget »ì¾ÆÀÖÀ½. WidgetWarning"));
+                //        UE_LOG(LogTemp, Error, TEXT("currentwidget ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. WidgetWarning"));
                 //    }
                 //}
-                //else {//À§Á¬Å¬·¡½º°¡ NULLÀÌ¸é ¿¡·¯°¡ ¶ä. ¼öÁ¤ÀÌ ÇÊ¿äÇÒ °ÍÀ¸·Î º¸ÀÓ.
+                //else {//ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NULLï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
                 //    UE_LOG(LogTemp, Error, TEXT("WidgetWarning is NULL in BeginPlay!"));
                 //}
 
@@ -221,28 +221,28 @@ void APlayerCharacter::Interact()//WidgetCheckList
                 //SetCustomDepthRecursive(InteractableActor, false);
 
                 break;
-            }//else if ¼öÁ¤¿Ï·á!  else if¹®À¸·Î CameraPos¸»°í NoCameraÀÎ °æ¿ì¿¡ ÀÛµ¿ÇÏµµ·Ï ¼öÁ¤.
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("WidgetCheckList"))) {//NoCamera¿Í WidgetCheckList¸¦ ÅÂ±×·Î °®°í ÀÖ´Â °æ¿ì ÇØ´ç À§Á¬ ºí·çÇÁ¸°Æ® ºäÆ÷Æ®¿¡ Ãâ·Â.
+            }//else if ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½!  else ifï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ CameraPosï¿½ï¿½ï¿½ï¿½ NoCameraï¿½ï¿½ ï¿½ï¿½ì¿¡ ï¿½Ûµï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("WidgetCheckList"))) {//NoCameraï¿½ï¿½ WidgetCheckListï¿½ï¿½ ï¿½Â±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½.
                 UE_LOG(LogTemp, Warning, TEXT("find widget "));
                 CheckList();
                 
                 //ActorWidgetClass = WidgetCheckList;
 
-                //if (ActorWidgetClass) {//Widget À¯È¿¼º °Ë»ç
+                //if (ActorWidgetClass) {//Widget ï¿½ï¿½È¿ï¿½ï¿½ ï¿½Ë»ï¿½
                 //    CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), ActorWidgetClass);
                 //    if (!CurrentWidget) {
                 //        UE_LOG(LogTemp, Error, TEXT("WidgetCheckList creation failed!"));
                 //    }
                 //    else {
-                //        UE_LOG(LogTemp, Error, TEXT("currentwidget »ì¾ÆÀÖÀ½. widgetchecklist"));
+                //        UE_LOG(LogTemp, Error, TEXT("currentwidget ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. widgetchecklist"));
                 //    }
                 //}
-                //else {//À§Á¬Å¬·¡½º°¡ NULLÀÌ¸é ¿¡·¯°¡ ¶ä. ¼öÁ¤ÀÌ ÇÊ¿äÇÒ °ÍÀ¸·Î º¸ÀÓ.
+                //else {//ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NULLï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
                 //    UE_LOG(LogTemp, Error, TEXT("WidgetCheckList is NULL in BeginPlay!"));
                 //}
                 //UE_LOG(LogTemp, Warning, TEXT("NoCamera component with tag"));
 
-                //TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); Ä«¸Þ¶ó ÄÄÆ÷³ÍÆ® À§Ä¡·Î ÀÌµ¿.
+                //TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½.
                 //TargetCameraRotation = SceneComponent->GetComponentRotation();
 
                 //bIsInteracting = true;
@@ -258,21 +258,21 @@ void APlayerCharacter::Interact()//WidgetCheckList
                 ViewInformation();
                 //ActorWidgetClass = WidgetInformation;
 
-                //if (ActorWidgetClass) {//Widget À¯È¿¼º °Ë»ç
+                //if (ActorWidgetClass) {//Widget ï¿½ï¿½È¿ï¿½ï¿½ ï¿½Ë»ï¿½
                 //    CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), ActorWidgetClass);
                 //    if (!CurrentWidget) {
                 //        UE_LOG(LogTemp, Error, TEXT("WidgetInformation creation failed!"));
                 //    }
                 //    else {
-                //        UE_LOG(LogTemp, Error, TEXT("currentwidget »ì¾ÆÀÖÀ½. WidgetInformation"));
+                //        UE_LOG(LogTemp, Error, TEXT("currentwidget ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. WidgetInformation"));
                 //    }
                 //}
-                //else {//À§Á¬Å¬·¡½º°¡ NULLÀÌ¸é ¿¡·¯°¡ ¶ä. ¼öÁ¤ÀÌ ÇÊ¿äÇÒ °ÍÀ¸·Î º¸ÀÓ.
+                //else {//ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ NULLï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
                 //    UE_LOG(LogTemp, Error, TEXT("WidgetInformation is NULL in BeginPlay!"));
                 //}
                 //UE_LOG(LogTemp, Warning, TEXT("NoCamera component with tag"));
 
-                //TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); Ä«¸Þ¶ó ÄÄÆ÷³ÍÆ® À§Ä¡·Î ÀÌµ¿.
+                //TargetCameraLocation = CameraComponent->GetComponentLocation();  //FVector(-60.0f, 60.0f, 330.0f); Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½.
                 //TargetCameraRotation = SceneComponent->GetComponentRotation();
 
                 //bIsInteracting = true;
@@ -283,9 +283,9 @@ void APlayerCharacter::Interact()//WidgetCheckList
 
                 break;
             }
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Arrest"))) {//Arrest Button ±¸ÇöºÎ
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Arrest"))) {//Arrest Button ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 UE_LOG(LogTemp, Log, TEXT("find Arrest"));
-                //arrest ¾Ö´Ï¸ÞÀÌ¼Ç ¿Ï·áµÇ¸é ÄÚµå Ãß°¡ ¿¹Á¤.
+                //arrest ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½Ï·ï¿½Ç¸ï¿½ ï¿½Úµï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½.
                 //ActorWidgetClass = WidgetInformation;
                 if (SceneComponent->ComponentHasTag(FName("NPC"))) {
                     UE_LOG(LogTemp, Log, TEXT("find ArrestNPC"));
@@ -295,22 +295,22 @@ void APlayerCharacter::Interact()//WidgetCheckList
                 }
                 break;
             }
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Next"))) {//Next Button ±¸ÇöºÎ
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Next"))) {//Next Button ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 UE_LOG(LogTemp, Log, TEXT("find Next"));
                 StartMove_Event();
                 break;
             }
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Reject"))) {//Reject Button ±¸ÇöºÎ
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Reject"))) {//Reject Button ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 UE_LOG(LogTemp, Warning, TEXT("find Reject"));
                 BackMove_Event();
                 break;
             }
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Scan"))) {//Scan Button ±¸ÇöºÎ
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Scan"))) {//Scan Button ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 UE_LOG(LogTemp, Log, TEXT("find Scan"));
                 ScanBP();
                 break;
             }
-            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Pass"))) {//Next Button ±¸ÇöºÎ
+            else if (SceneComponent->ComponentHasTag(FName("NoCamera")) && SceneComponent->ComponentHasTag(FName("Pass"))) {//Next Button ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 UE_LOG(LogTemp, Log, TEXT("find Pass"));
                 EndMove_Event();
                 break;
@@ -329,12 +329,12 @@ void APlayerCharacter::CancelInteraction()
     bIsInteracting = false;
     bInputDisabled = false;
 
-    //Ä«¸Þ¶ó À§Ä¡ ¿ø»óº¹±Í (BeginPlay¿¡¼­ ¹ÞÀº ÃÊ±â À§Ä¡·Î ÀÌµ¿)
+    //Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½óº¹±ï¿½ (BeginPlayï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½)
     CameraComponent->SetWorldLocationAndRotation(OriginalCameraLocation, OriginalCameraRotation);
 
     EnablePlayerInput();
 
-    //if (CurrentWidget) {//CancleInteraction()½Ã ºäÆ÷Æ®¿¡ À§Á¬ »èÁ¦.
+    //if (CurrentWidget) {//CancleInteraction()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     //    CurrentWidget->RemoveFromParent();
     //    UE_LOG(LogTemp, Warning, TEXT("Widget remove to Viewport"));//debug tool
     //}
@@ -348,12 +348,12 @@ void APlayerCharacter::DisablePlayerInput()
     APlayerController* PlayerController = Cast<APlayerController>(GetController());
     if (PlayerController)
     {
-        //if (CurrentWidget) {//DisablePlayerInput()½Ã ºäÆ÷Æ®¿¡ À§Á¬ ¶ç¿ì±â
+        //if (CurrentWidget) {//DisablePlayerInput()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         //    CurrentWidget->AddToViewport();
         //    UE_LOG(LogTemp, Warning, TEXT("Widget Added to Viewport"));//debug tool
         //}
         //else {
-        //    UE_LOG(LogTemp, Error, TEXT("currentwidget Á×¾úÀ½. diableplayerinput"));
+        //    UE_LOG(LogTemp, Error, TEXT("currentwidget ï¿½×¾ï¿½ï¿½ï¿½. diableplayerinput"));
         //}
         PlayerController->bShowMouseCursor = true;
         PlayerController->SetIgnoreLookInput(true);
@@ -386,7 +386,7 @@ void APlayerCharacter::StartArrest() {
     bIsArrest = true;
 }
 
-//ÃßÈÄ¿¡ Ãß°¡ ¿¹Á¤.
+//ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½.
 void APlayerCharacter::ArrestButton() {
 
 }

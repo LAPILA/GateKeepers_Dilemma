@@ -16,7 +16,7 @@ void UDialogueWidget::UpdateDialogue(const FString& PlayerChoice)
     // Constructing more expressive responses for each query
     if (PlayerChoice == "AskPurpose")
     {
-        Response = FString::Printf(TEXT("Actually, I¡¯m here because %s. It took me a while to decide, but I couldn¡¯t miss this chance."), *NPCData.Purpose);
+        Response = FString::Printf(TEXT("Actually, I'm here because %s. It took me a while to decide, but I couldnï¿½ï¿½t miss this chance."), *NPCData.Purpose);
     }
     else if (PlayerChoice == "AskResidence")
     {
@@ -24,7 +24,7 @@ void UDialogueWidget::UpdateDialogue(const FString& PlayerChoice)
     }
     else if (PlayerChoice == "AskBirthDate")
     {
-        Response = FString::Printf(TEXT("My birthday? It¡¯s %s. Being born in winter means I always spend it in the cold, but I do love it when it snows."), *NPCData.BirthDate);
+        Response = FString::Printf(TEXT("My birthday? It's %s. Being born in winter means I always spend it in the cold, but I do love it when it snows."), *NPCData.BirthDate);
     }
     else if (PlayerChoice == "AskPassport")
     {
@@ -33,11 +33,11 @@ void UDialogueWidget::UpdateDialogue(const FString& PlayerChoice)
     else if (PlayerChoice == "AskGender")
     {
         FString GenderStr = NPCData.Gender ? "male" : "female";
-        Response = FString::Printf(TEXT("Well, I am %s, though I don¡¯t really think that should matter much."), *GenderStr);
+        Response = FString::Printf(TEXT("Well, I am %s, though I don't really think that should matter much."), *GenderStr);
     }
     else if (PlayerChoice == "AskStamp")
     {
-        FString StampStr = NPCData.Stamp ? "Yes, it has been stamped. It was quite nerve-wracking during the entry." : "No, not yet stamped. I¡¯ve been so anxious I could hardly sleep.";
+        FString StampStr = NPCData.Stamp ? "Yes, it has been stamped. It was quite nerve-wracking during the entry." : "No, not yet stamped. I've been so anxious I could hardly sleep.";
         Response = FString::Printf(TEXT("Stamp status: %s"), *StampStr);
     }
     else if (PlayerChoice == "AskDiagnosis")
@@ -51,7 +51,7 @@ void UDialogueWidget::UpdateDialogue(const FString& PlayerChoice)
     }
     else
     {
-        Response = "What would you like to know? I¡¯ve been quite curious about many things ever since I planned my trip here.";
+        Response = "What would you like to know? I've been quite curious about many things ever since I planned my trip here.";
     }
 
     if (DialogueText)
