@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\LevelScriptRandomData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\PlayerCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,16 +19,12 @@
       "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\PlayerCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|solutionrelative:Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62AD1C2E-7417-3424-AC12-8FB3E3322C27}|Intermediate\\ProjectFiles\\Day_At_Guardhouse.vcxproj|C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,48 +42,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Day_At_GuardhouseGameMode.h",
-              "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h",
-              "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h",
-              "ToolTip": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h",
-              "RelativeToolTip": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.h",
+              "DocumentIndex": 0,
+              "Title": "LevelScriptRandomData.cpp",
+              "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp",
+              "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp",
+              "ToolTip": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp",
+              "RelativeToolTip": "Source\\Day_At_Guardhouse\\LevelScriptRandomData.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-30T09:29:02.194Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T14:13:12.583Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "LevelScriptRandomData.h",
+              "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.h",
+              "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\LevelScriptRandomData.h",
+              "ToolTip": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\LevelScriptRandomData.h",
+              "RelativeToolTip": "Source\\Day_At_Guardhouse\\LevelScriptRandomData.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-14T14:13:12.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Day_At_GuardhouseCharacter.cpp",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp",
               "ToolTip": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp",
               "RelativeToolTip": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAABcAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-02T11:51:03.661Z"
+              "WhenOpened": "2024-10-02T11:51:03.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerCharacter.cpp",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\PlayerCharacter.cpp",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\PlayerCharacter.cpp",
               "ToolTip": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\PlayerCharacter.cpp",
               "RelativeToolTip": "Source\\Day_At_Guardhouse\\PlayerCharacter.cpp",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAAAEEBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACABAAAAAAAAAAAAADUBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-01T05:53:09.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Day_At_GuardhouseCharacter.h",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h",
@@ -87,11 +106,12 @@
               "RelativeToolTip": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseCharacter.h",
               "ViewState": "AgIAADAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-02T11:51:03.381Z"
+              "WhenOpened": "2024-10-02T11:51:03.381Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PlayerCharacter.h",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\PlayerCharacter.h",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\PlayerCharacter.h",
@@ -104,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Day_At_GuardhouseGameMode.cpp",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.cpp",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.cpp",
@@ -112,11 +132,12 @@
               "RelativeToolTip": "Source\\Day_At_Guardhouse\\Day_At_GuardhouseGameMode.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-30T09:29:02.382Z"
+              "WhenOpened": "2024-11-30T09:29:02.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Day_At_Guardhouse.Build.cs",
               "DocumentMoniker": "C:\\Users\\Develop\\Unreal_Project\\GateKeepers_Dilemma\\Source\\Day_At_Guardhouse\\Day_At_Guardhouse.Build.cs",
               "RelativeDocumentMoniker": "Source\\Day_At_Guardhouse\\Day_At_Guardhouse.Build.cs",
@@ -124,7 +145,8 @@
               "RelativeToolTip": "Source\\Day_At_Guardhouse\\Day_At_Guardhouse.Build.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T05:49:09.863Z"
+              "WhenOpened": "2024-09-08T05:49:09.863Z",
+              "EditorCaption": ""
             }
           ]
         }
